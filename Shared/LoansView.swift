@@ -20,20 +20,21 @@ struct LoansView: View {
         NavigationView {
             List {
                 ForEach(loans) { loan in
-                        Text(loan.name ?? "Unknown")
+                    LoanCellView(name: loan.name ?? "Unknown", amount: loan.totalAmount, date: loan.dueDate ?? Date())
                 }
                 .onDelete(perform: deleteItems)
             }
-            .toolbar {
-
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-            Text("Select an item")
+            .listStyle(PlainListStyle())
+            .navigationTitle("All Loans")
+            .navigationBarItems(trailing:
+                                    Button {
+                addItem()
+            } label: {
+            Image(systemName: "plus")
+                    .font(.title)
+            })
         }
+        .accentColor(Color(.label))
     }
 
     private func addItem() {

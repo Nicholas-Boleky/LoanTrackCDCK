@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F22726A270183E300C67ED4 /* LoanCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F227269270183E300C67ED4 /* LoanCellView.swift */; };
+		9F22726B270183E300C67ED4 /* LoanCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F227269270183E300C67ED4 /* LoanCellView.swift */; };
+		9F22726D270185D700C67ED4 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F22726C270185D700C67ED4 /* Date+Extension.swift */; };
+		9F22726E270185D700C67ED4 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F22726C270185D700C67ED4 /* Date+Extension.swift */; };
+		9F2272702701873800C67ED4 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F22726F2701873800C67ED4 /* Double+Extension.swift */; };
+		9F2272712701873800C67ED4 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F22726F2701873800C67ED4 /* Double+Extension.swift */; };
 		9F8F418B26FEE43000D5BB67 /* LoanTrackCDCK.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F417826FEE42F00D5BB67 /* LoanTrackCDCK.xcdatamodeld */; };
 		9F8F418C26FEE43000D5BB67 /* LoanTrackCDCK.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F417826FEE42F00D5BB67 /* LoanTrackCDCK.xcdatamodeld */; };
 		9F8F418D26FEE43000D5BB67 /* LoanTrackCDCKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F417A26FEE42F00D5BB67 /* LoanTrackCDCKApp.swift */; };
@@ -20,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F227269270183E300C67ED4 /* LoanCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanCellView.swift; sourceTree = "<group>"; };
+		9F22726C270185D700C67ED4 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		9F22726F2701873800C67ED4 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		9F8F417926FEE42F00D5BB67 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		9F8F417A26FEE42F00D5BB67 /* LoanTrackCDCKApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanTrackCDCKApp.swift; sourceTree = "<group>"; };
 		9F8F417B26FEE42F00D5BB67 /* LoansView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoansView.swift; sourceTree = "<group>"; };
@@ -62,6 +71,9 @@
 			children = (
 				9F8F417A26FEE42F00D5BB67 /* LoanTrackCDCKApp.swift */,
 				9F8F417B26FEE42F00D5BB67 /* LoansView.swift */,
+				9F227269270183E300C67ED4 /* LoanCellView.swift */,
+				9F22726C270185D700C67ED4 /* Date+Extension.swift */,
+				9F22726F2701873800C67ED4 /* Double+Extension.swift */,
 				9F8F417C26FEE42F00D5BB67 /* Persistence.swift */,
 				9F8F417D26FEE43000D5BB67 /* Assets.xcassets */,
 				9F8F417826FEE42F00D5BB67 /* LoanTrackCDCK.xcdatamodeld */,
@@ -186,8 +198,11 @@
 			files = (
 				9F8F418D26FEE43000D5BB67 /* LoanTrackCDCKApp.swift in Sources */,
 				9F8F419126FEE43000D5BB67 /* Persistence.swift in Sources */,
+				9F22726A270183E300C67ED4 /* LoanCellView.swift in Sources */,
 				9F8F418B26FEE43000D5BB67 /* LoanTrackCDCK.xcdatamodeld in Sources */,
 				9F8F418F26FEE43000D5BB67 /* LoansView.swift in Sources */,
+				9F2272702701873800C67ED4 /* Double+Extension.swift in Sources */,
+				9F22726D270185D700C67ED4 /* Date+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,8 +212,11 @@
 			files = (
 				9F8F418E26FEE43000D5BB67 /* LoanTrackCDCKApp.swift in Sources */,
 				9F8F419226FEE43000D5BB67 /* Persistence.swift in Sources */,
+				9F22726B270183E300C67ED4 /* LoanCellView.swift in Sources */,
 				9F8F418C26FEE43000D5BB67 /* LoanTrackCDCK.xcdatamodeld in Sources */,
 				9F8F419026FEE43000D5BB67 /* LoansView.swift in Sources */,
+				9F2272712701873800C67ED4 /* Double+Extension.swift in Sources */,
+				9F22726E270185D700C67ED4 /* Date+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
