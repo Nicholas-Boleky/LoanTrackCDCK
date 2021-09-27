@@ -30,7 +30,7 @@ struct LoanCellView: View {
             
             Text(date.longDate)
                 .font(.subheadline)
-                .foregroundColor(.secondary)
+                .foregroundColor(.secondary) 
             
         }
     }
