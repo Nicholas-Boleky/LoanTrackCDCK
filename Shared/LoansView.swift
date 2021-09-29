@@ -11,10 +11,13 @@ import CoreData
 struct LoansView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
+    //This is only one way to load item from CoreData
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Loan.startDate, ascending: true)],
         animation: .default)
     private var loans: FetchedResults<Loan>
+    
+    @State var isAddLoanShowing = false
 
     var body: some View {
         NavigationView {
@@ -28,13 +31,16 @@ struct LoansView: View {
             .navigationTitle("All Loans")
             .navigationBarItems(trailing:
                                     Button {
-                addItem()
+                isAddLoanShowing = true
             } label: {
             Image(systemName: "plus")
                     .font(.title)
             })
         }
         .accentColor(Color(.label))
+        .sheet(isPresented: $isAddLoanShowing) {
+            AddLoanView(viewModel: AddLoanViewModel(isAddLoanShowing: $isAddLoanShowing))
+        }
     }
 
     private func addItem() {
