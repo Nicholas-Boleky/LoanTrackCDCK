@@ -22,8 +22,12 @@ struct LoansView: View {
     var body: some View {
         NavigationView {
             List {
+                //Navigation Link taking in destination and label which will be a view that will be presented (label is the custom cell we made)
+                
                 ForEach(loans) { loan in
+                    NavigationLink(destination: PaymentsView(viewModel: PaymentViewModel(loan: loan))) {
                     LoanCellView(name: loan.name ?? "Unknown", amount: loan.totalAmount, date: loan.dueDate ?? Date())
+                    }
                 }
                 .onDelete(perform: deleteItems)
             }

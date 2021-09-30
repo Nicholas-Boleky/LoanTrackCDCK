@@ -17,6 +17,16 @@
 		9F227274270353E900C67ED4 /* AddLoanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F227272270353E900C67ED4 /* AddLoanView.swift */; };
 		9F2272762703F56700C67ED4 /* AddLoanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2272752703F56700C67ED4 /* AddLoanViewModel.swift */; };
 		9F2272772703F56700C67ED4 /* AddLoanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2272752703F56700C67ED4 /* AddLoanViewModel.swift */; };
+		9F68D5FF270510F200E6F026 /* PaymentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68D5FE270510F200E6F026 /* PaymentsView.swift */; };
+		9F68D600270510F200E6F026 /* PaymentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68D5FE270510F200E6F026 /* PaymentsView.swift */; };
+		9F68D6022705111000E6F026 /* PaymentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68D6012705111000E6F026 /* PaymentViewModel.swift */; };
+		9F68D6032705111000E6F026 /* PaymentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68D6012705111000E6F026 /* PaymentViewModel.swift */; };
+		9F68D60827051F3A00E6F026 /* AddPaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68D60727051F3A00E6F026 /* AddPaymentView.swift */; };
+		9F68D60927051F3A00E6F026 /* AddPaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68D60727051F3A00E6F026 /* AddPaymentView.swift */; };
+		9F68D60B27051F4800E6F026 /* AddPaymentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68D60A27051F4800E6F026 /* AddPaymentViewModel.swift */; };
+		9F68D60C27051F4800E6F026 /* AddPaymentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68D60A27051F4800E6F026 /* AddPaymentViewModel.swift */; };
+		9F68D60E270526DF00E6F026 /* PaymentCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68D60D270526DF00E6F026 /* PaymentCellView.swift */; };
+		9F68D60F270526DF00E6F026 /* PaymentCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68D60D270526DF00E6F026 /* PaymentCellView.swift */; };
 		9F8F418B26FEE43000D5BB67 /* LoanTrackCDCK.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F417826FEE42F00D5BB67 /* LoanTrackCDCK.xcdatamodeld */; };
 		9F8F418C26FEE43000D5BB67 /* LoanTrackCDCK.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F417826FEE42F00D5BB67 /* LoanTrackCDCK.xcdatamodeld */; };
 		9F8F418D26FEE43000D5BB67 /* LoanTrackCDCKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F417A26FEE42F00D5BB67 /* LoanTrackCDCKApp.swift */; };
@@ -35,6 +45,11 @@
 		9F22726F2701873800C67ED4 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		9F227272270353E900C67ED4 /* AddLoanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLoanView.swift; sourceTree = "<group>"; };
 		9F2272752703F56700C67ED4 /* AddLoanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLoanViewModel.swift; sourceTree = "<group>"; };
+		9F68D5FE270510F200E6F026 /* PaymentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsView.swift; sourceTree = "<group>"; };
+		9F68D6012705111000E6F026 /* PaymentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewModel.swift; sourceTree = "<group>"; };
+		9F68D60727051F3A00E6F026 /* AddPaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPaymentView.swift; sourceTree = "<group>"; };
+		9F68D60A27051F4800E6F026 /* AddPaymentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPaymentViewModel.swift; sourceTree = "<group>"; };
+		9F68D60D270526DF00E6F026 /* PaymentCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCellView.swift; sourceTree = "<group>"; };
 		9F8F417926FEE42F00D5BB67 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		9F8F417A26FEE42F00D5BB67 /* LoanTrackCDCKApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanTrackCDCKApp.swift; sourceTree = "<group>"; };
 		9F8F417B26FEE42F00D5BB67 /* LoansView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoansView.swift; sourceTree = "<group>"; };
@@ -63,6 +78,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F68D5FB270510A100E6F026 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9F22726C270185D700C67ED4 /* Date+Extension.swift */,
+				9F22726F2701873800C67ED4 /* Double+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9F68D5FC270510AF00E6F026 /* CoreDataHelper */ = {
+			isa = PBXGroup;
+			children = (
+				9F8F417C26FEE42F00D5BB67 /* Persistence.swift */,
+			);
+			path = CoreDataHelper;
+			sourceTree = "<group>";
+		};
+		9F68D5FD270510BF00E6F026 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9F227269270183E300C67ED4 /* LoanCellView.swift */,
+				9F68D60D270526DF00E6F026 /* PaymentCellView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		9F8F417226FEE42F00D5BB67 = {
 			isa = PBXGroup;
 			children = (
@@ -77,12 +118,15 @@
 			children = (
 				9F8F417A26FEE42F00D5BB67 /* LoanTrackCDCKApp.swift */,
 				9F8F417B26FEE42F00D5BB67 /* LoansView.swift */,
-				9F227269270183E300C67ED4 /* LoanCellView.swift */,
 				9F227272270353E900C67ED4 /* AddLoanView.swift */,
 				9F2272752703F56700C67ED4 /* AddLoanViewModel.swift */,
-				9F22726C270185D700C67ED4 /* Date+Extension.swift */,
-				9F22726F2701873800C67ED4 /* Double+Extension.swift */,
-				9F8F417C26FEE42F00D5BB67 /* Persistence.swift */,
+				9F68D5FE270510F200E6F026 /* PaymentsView.swift */,
+				9F68D6012705111000E6F026 /* PaymentViewModel.swift */,
+				9F68D60727051F3A00E6F026 /* AddPaymentView.swift */,
+				9F68D60A27051F4800E6F026 /* AddPaymentViewModel.swift */,
+				9F68D5FD270510BF00E6F026 /* Views */,
+				9F68D5FB270510A100E6F026 /* Extension */,
+				9F68D5FC270510AF00E6F026 /* CoreDataHelper */,
 				9F8F417D26FEE43000D5BB67 /* Assets.xcassets */,
 				9F8F417826FEE42F00D5BB67 /* LoanTrackCDCK.xcdatamodeld */,
 			);
@@ -205,6 +249,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F8F418D26FEE43000D5BB67 /* LoanTrackCDCKApp.swift in Sources */,
+				9F68D60B27051F4800E6F026 /* AddPaymentViewModel.swift in Sources */,
+				9F68D60827051F3A00E6F026 /* AddPaymentView.swift in Sources */,
+				9F68D60E270526DF00E6F026 /* PaymentCellView.swift in Sources */,
 				9F8F419126FEE43000D5BB67 /* Persistence.swift in Sources */,
 				9F227273270353E900C67ED4 /* AddLoanView.swift in Sources */,
 				9F22726A270183E300C67ED4 /* LoanCellView.swift in Sources */,
@@ -213,6 +260,8 @@
 				9F8F418F26FEE43000D5BB67 /* LoansView.swift in Sources */,
 				9F2272702701873800C67ED4 /* Double+Extension.swift in Sources */,
 				9F22726D270185D700C67ED4 /* Date+Extension.swift in Sources */,
+				9F68D5FF270510F200E6F026 /* PaymentsView.swift in Sources */,
+				9F68D6022705111000E6F026 /* PaymentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +270,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F8F418E26FEE43000D5BB67 /* LoanTrackCDCKApp.swift in Sources */,
+				9F68D60C27051F4800E6F026 /* AddPaymentViewModel.swift in Sources */,
+				9F68D60927051F3A00E6F026 /* AddPaymentView.swift in Sources */,
+				9F68D60F270526DF00E6F026 /* PaymentCellView.swift in Sources */,
 				9F8F419226FEE43000D5BB67 /* Persistence.swift in Sources */,
 				9F227274270353E900C67ED4 /* AddLoanView.swift in Sources */,
 				9F22726B270183E300C67ED4 /* LoanCellView.swift in Sources */,
@@ -229,6 +281,8 @@
 				9F8F419026FEE43000D5BB67 /* LoansView.swift in Sources */,
 				9F2272712701873800C67ED4 /* Double+Extension.swift in Sources */,
 				9F22726E270185D700C67ED4 /* Date+Extension.swift in Sources */,
+				9F68D600270510F200E6F026 /* PaymentsView.swift in Sources */,
+				9F68D6032705111000E6F026 /* PaymentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

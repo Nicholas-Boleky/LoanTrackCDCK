@@ -38,4 +38,18 @@ struct PersistenceController {
         }
     }
     
-}
+    //Taking in loan ID To only display payments linked to specific loan
+    func fetchPayments(for loanId: String) -> [Payment] {
+        let request: NSFetchRequest<Payment> = Payment.fetchRequest()
+        //Predicates are used to query specific values, '%@' is a placehodler from objC times that tells xcode to replace it with the variable. In other words this will search for payments with our needed loan id
+        request.predicate = NSPredicate(format: "loanid == %@", loanId)
+        request.sortDescriptors = [NSSortDescriptor(keyPath: \Payment.date, ascending: true)]
+        
+        do {
+            return try viewContext.fetch(request)
+        } catch {
+            return []
+        }
+    }
+    
+}//structfile

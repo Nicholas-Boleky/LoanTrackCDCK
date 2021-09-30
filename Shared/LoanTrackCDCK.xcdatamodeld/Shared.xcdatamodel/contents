@@ -9,7 +9,7 @@
         <relationship name="payments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Payment" inverseName="loan" inverseEntity="Payment"/>
     </entity>
     <entity name="Payment" representedClassName="Payment" syncable="YES" codeGenerationType="class">
-        <attribute name="ammount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="id" optional="YES" attributeType="String"/>
         <attribute name="loanid" optional="YES" attributeType="String"/>
@@ -17,6 +17,6 @@
     </entity>
     <elements>
         <element name="Loan" positionX="-63" positionY="-18" width="128" height="133"/>
-        <element name="Payment" positionX="178.71875" positionY="13.08203125" width="128" height="118"/>
+        <element name="Payment" positionX="178.71875" positionY="13.08203125" width="128" height="104"/>
     </elements>
 </model>
