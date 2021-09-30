@@ -24,7 +24,7 @@ struct AddPaymentView: View {
             
             Section {
                 Button {
-                    viewModel.createNewPayment()
+                    viewModel.savePayment()
                     self.mode.wrappedValue.dismiss()
                 } label: {
                     Text("Save")
@@ -35,7 +35,10 @@ struct AddPaymentView: View {
             .disabled(viewModel.isFormValid())
             
         }//form end
-        .navigationTitle("Add Payment")
+        .onAppear() {
+            viewModel.setupEditingView()
+        }
+        .navigationTitle(viewModel.payment != nil ? "Edit Payment" : "Add Payment")
     }
 }
 

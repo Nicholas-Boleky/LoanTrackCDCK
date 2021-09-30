@@ -27,7 +27,10 @@ struct PersistenceController {
                 fatalError("Unresolved error \(error), \(error.userInfo)")
             }
         })
-        //add save to cloud
+        
+        viewContext.automaticallyMergesChangesFromParent = true
+        //2 choices, store trump = external changes, object trump = in memory changes
+        viewContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
     }//end of init
     
     func save() {

@@ -21,11 +21,9 @@ struct PaymentsView: View {
                 .foregroundColor(.secondary)
                 .padding(.top)
             
-            Rectangle()
-                .frame(height: 30)
-                .foregroundColor(.blue)
-                .cornerRadius(10)
-                .padding()
+            ProgressBar(value: viewModel.progressValue(), leftAmount: viewModel.totalLeft(), paidAmount: viewModel.totalPaid())
+                .frame(height: 25)
+                .padding(.horizontal)
             
             Text(viewModel.expectedToFinishOn)
             
@@ -36,6 +34,10 @@ struct PaymentsView: View {
                         
                         ForEach(paymentObject.sectionObjects) { payment in
                             PaymentCellView(amount: payment.amount, date: payment.date ?? Date())
+                                .onTapGesture{
+                                    viewModel.isNavigationLinkActive = true
+                                    viewModel.selectedPayment = payment
+                                }
                         }
                         .onDelete { index in
                             viewModel.delete(paymentObject: paymentObject, index: index)
@@ -56,15 +58,17 @@ struct PaymentsView: View {
                 .font(.title)
         })
         .background(
-            NavigationLink(destination: AddPaymentView(viewModel: AddPaymentViewModel(loanId: viewModel.loan.id ?? "")), isActive: $viewModel.isNavigationLinkActive) {
+            NavigationLink(destination: AddPaymentView(viewModel: AddPaymentViewModel(paymentToEdit: viewModel.selectedPayment, loanId: viewModel.loan.id ?? "")), isActive: $viewModel.isNavigationLinkActive) {
                 EmptyView()
             }
                 .hidden()
         )
         .onAppear() {
+            viewModel.selectedPayment = nil
             viewModel.fetchAllPayments()
             viewModel.calculateDays()
             viewModel.separateByYear()
+            
         }
         
     }

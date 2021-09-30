@@ -14,6 +14,7 @@ final class PaymentViewModel: ObservableObject {
     @Published var allPaymentObjects: [PaymentObject] = []
     @Published var isNavigationLinkActive = false
     @Published var expectedToFinishOn: String = ""
+    @Published var selectedPayment: Payment? 
     
     var loan: Loan
     
@@ -25,6 +26,15 @@ final class PaymentViewModel: ObservableObject {
         //goes through the allPayments array at each index and adds the amount of the next index to the cumulative total of the previous amoount
         return allPayments.reduce(0) { $0 + $1.amount}
     }
+    
+    func totalLeft() -> Double {
+        return self.loan.totalAmount - totalPaid()
+    }
+    
+    func progressValue() -> Double {
+        return totalPaid() / self.loan.totalAmount
+    }
+    
     
     func fetchAllPayments() {
         allPayments = PersistenceController.shared.fetchPayments(for: loan.id ?? "")

@@ -27,6 +27,9 @@
 		9F68D60C27051F4800E6F026 /* AddPaymentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68D60A27051F4800E6F026 /* AddPaymentViewModel.swift */; };
 		9F68D60E270526DF00E6F026 /* PaymentCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68D60D270526DF00E6F026 /* PaymentCellView.swift */; };
 		9F68D60F270526DF00E6F026 /* PaymentCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68D60D270526DF00E6F026 /* PaymentCellView.swift */; };
+		9F68D61127053C8600E6F026 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68D61027053C8600E6F026 /* ProgressBar.swift */; };
+		9F68D61227053C8600E6F026 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68D61027053C8600E6F026 /* ProgressBar.swift */; };
+		9F68D61627054D3B00E6F026 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F68D61527054D3B00E6F026 /* CloudKit.framework */; };
 		9F8F418B26FEE43000D5BB67 /* LoanTrackCDCK.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F417826FEE42F00D5BB67 /* LoanTrackCDCK.xcdatamodeld */; };
 		9F8F418C26FEE43000D5BB67 /* LoanTrackCDCK.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F417826FEE42F00D5BB67 /* LoanTrackCDCK.xcdatamodeld */; };
 		9F8F418D26FEE43000D5BB67 /* LoanTrackCDCKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F417A26FEE42F00D5BB67 /* LoanTrackCDCKApp.swift */; };
@@ -50,6 +53,10 @@
 		9F68D60727051F3A00E6F026 /* AddPaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPaymentView.swift; sourceTree = "<group>"; };
 		9F68D60A27051F4800E6F026 /* AddPaymentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPaymentViewModel.swift; sourceTree = "<group>"; };
 		9F68D60D270526DF00E6F026 /* PaymentCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCellView.swift; sourceTree = "<group>"; };
+		9F68D61027053C8600E6F026 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProgressBar.swift; path = Shared/ProgressBar.swift; sourceTree = SOURCE_ROOT; };
+		9F68D61327054CFE00E6F026 /* LoanTrackCDCK (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LoanTrackCDCK (iOS).entitlements"; sourceTree = "<group>"; };
+		9F68D61527054D3B00E6F026 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		9F68D61727054E4300E6F026 /* LoanTrackCDCK--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "LoanTrackCDCK--iOS--Info.plist"; sourceTree = "<group>"; };
 		9F8F417926FEE42F00D5BB67 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		9F8F417A26FEE42F00D5BB67 /* LoanTrackCDCKApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanTrackCDCKApp.swift; sourceTree = "<group>"; };
 		9F8F417B26FEE42F00D5BB67 /* LoansView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoansView.swift; sourceTree = "<group>"; };
@@ -65,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F68D61627054D3B00E6F026 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,18 +106,30 @@
 		9F68D5FD270510BF00E6F026 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9F68D61027053C8600E6F026 /* ProgressBar.swift */,
 				9F227269270183E300C67ED4 /* LoanCellView.swift */,
 				9F68D60D270526DF00E6F026 /* PaymentCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
+		9F68D61427054D3B00E6F026 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F68D61527054D3B00E6F026 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9F8F417226FEE42F00D5BB67 = {
 			isa = PBXGroup;
 			children = (
+				9F68D61727054E4300E6F026 /* LoanTrackCDCK--iOS--Info.plist */,
+				9F68D61327054CFE00E6F026 /* LoanTrackCDCK (iOS).entitlements */,
 				9F8F417726FEE42F00D5BB67 /* Shared */,
 				9F8F418926FEE43000D5BB67 /* macOS */,
 				9F8F418326FEE43000D5BB67 /* Products */,
+				9F68D61427054D3B00E6F026 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -261,6 +281,7 @@
 				9F2272702701873800C67ED4 /* Double+Extension.swift in Sources */,
 				9F22726D270185D700C67ED4 /* Date+Extension.swift in Sources */,
 				9F68D5FF270510F200E6F026 /* PaymentsView.swift in Sources */,
+				9F68D61127053C8600E6F026 /* ProgressBar.swift in Sources */,
 				9F68D6022705111000E6F026 /* PaymentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +303,7 @@
 				9F2272712701873800C67ED4 /* Double+Extension.swift in Sources */,
 				9F22726E270185D700C67ED4 /* Date+Extension.swift in Sources */,
 				9F68D600270510F200E6F026 /* PaymentsView.swift in Sources */,
+				9F68D61227053C8600E6F026 /* ProgressBar.swift in Sources */,
 				9F68D6032705111000E6F026 /* PaymentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,10 +427,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "LoanTrackCDCK (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9YR5S5ZW3K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LoanTrackCDCK--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -434,10 +459,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "LoanTrackCDCK (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LoanTrackCDCK--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
