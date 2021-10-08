@@ -4,6 +4,9 @@ A quick loan tracking app using CoreData backed up by CloudKit in SwiftUI.
 ### Goal:
 My goal with this application was to explore if/how CoreData worked differently in SwiftUI. I also wanted to see how CloudKit integrated with CoreData. 
 
+### What this project utilizes: 
+Passing data between veiws
+
 ### What I learned
 I have used CoreData/CloudKit in Swift UIKit, however this was my first time implimenting it with SwiftUI. It didnt feel that much different, hower wiring up CoreData and its sorting functions to the various UI controls feels a lot more streamlined in SwiftUI. I played with some math in this application and sorting different years of payments into seperate sections on a form. 
 
