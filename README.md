@@ -10,7 +10,7 @@ My goal with this application was to explore if/how CoreData worked differently 
 * Working with dynamic sections on a form
 * Programatic math
 
-### What I learned
+### What I learned:
 I have used CoreData/CloudKit in Swift UIKit, however this was my first time implimenting it with SwiftUI. It didnt feel that much different, hower wiring up CoreData and its sorting functions to the various UI controls feels a lot more streamlined in SwiftUI. I played with some math in this application and sorting different years of payments into seperate sections on a form. 
 
 ### What I hope to add
